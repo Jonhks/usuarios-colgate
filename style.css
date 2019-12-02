@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+#mi-form{
+  margin-top: 10%;
+}
+
+.esconder {
+  display: none;
+}

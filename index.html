@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Usuarios</title>
+</head>
+
+<body>
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Contenido del collapsed</h5>
+        <span class="text-muted">Esto se ve oculto hasta que le damos click</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark text-white">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h1>Registro de Usuarios</h1>
+    </nav>
+  </div>
+
+
+  <section class="row">
+    <div id="mi-form" class="col-md-6 offset-md-3 shadow-lg p-3 mb-5 bg-white rounded">
+      <h2 class="text-center">Registro</h2>
+      <form id="form">
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name(s)</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Ingresa tu nombre"
+             required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputFirst" class="col-sm-2 col-form-label">FirstName</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputFirst" placeholder="Ingresa tu apellido"
+              required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputLast" class="col-sm-2 col-form-label">lastName</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputLast" placeholder="Ingresa apellido materno"
+              required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu email"
+              required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" placeholder="Ingresa tu contraseña" id="inputPassword"
+             required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputCel" class="col-sm-2 col-form-label">Celphone</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" placeholder="Ingresa tu numero celular" id="inputCel"
+              required>
+          </div>
+        </div>
+        <div class="form-group row ">
+          <label for="inputDept" class="col-sm-2 col-form-label">Departamento</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Ingresa el departamento que eres responsable"
+              id="inputDept">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Rol</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="admin-check"on1" checked>
+                <label class="form-check-label" for="admin-check">
+                  Administrador
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="trabajador-check"on2">
+                <label class="form-check-label" for="trabajador-check">
+                  Trabajador
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, voluptates. Nam ea rem harum quam
+            doloremque maiores velit facere assumenda necessitatibus illo repellat ad inventore incidunt, laboriosam
+            sapiente ab aperiam!
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-2">Accept</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" required id="terminos">
+              <label class="form-check-label" for="terminos">
+                Acepto terminos y condiciones
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row ">
+          <div class="col-md-2 offset-md-5 ">
+            <button id="send-form" type="submit" class="btn btn-primary" disabled>Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div id="root" class="row"></div>
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
