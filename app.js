@@ -31,7 +31,9 @@ class Admin extends Persona {
 const printUsers = () => {
   let str = ''
   const data = JSON.parse(localStorage.getItem('arr'))
+  console.log(data)
   data.forEach(element => {
+      console.log(element)
     str += `
     <div class="col-md-8 offset-md-2 shadow-lg p-3 mb-5 bg-white rounded">
     <div class="card">
